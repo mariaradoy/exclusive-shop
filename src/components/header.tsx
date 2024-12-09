@@ -1,8 +1,10 @@
 import { Navbar_item } from "./navbar-item";
 import { Wrapper } from "./wrapper";
-import Wishlist from "./../assets/Wishlist.svg";
+import Wishlist from "./../assets/icons/Wishlist.png";
+import ShoppingCard from "./../assets/icons/shopping-card.png";
+import Search from "./../assets/icons/Search.png";
 
-export function Header () {
+export const Header = () => {
     return (
         <div className='border-b border-b-slate-400'>
         <Wrapper>        
@@ -33,19 +35,18 @@ export function Header () {
                     name="search"
                     placeholder="What are you looking for?" 
                     className="w-full h-full bg-transparent px-[20px] placeholder:text-[12px]" />
-                  <button className="text-[12px] rounded bg-slate-900 text-white px-2 py-1">
-                    Search
+                  <button className="text-[12px] rounded bg-transparent px-2 py-1">
+                    <img src={Search} alt="Search" />
                   </button>
                 </div>
 
-                <Navbar_item>
-                  <a href="#">
-                    <img src={Wishlist} alt="Wishlist" />
-                  </a>
-                </Navbar_item>
-                <Navbar_item>
-                  <a href="#">Shopping Card</a>
-                </Navbar_item>
+                <a href="#">
+                  <img src={Wishlist} alt="Whislist" />
+                </a>
+                <a href="#">
+                  <img src={ShoppingCard} alt="Shopping Card" />
+                </a>
+                
               </div>
             </div>
         </Wrapper>

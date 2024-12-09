@@ -1,8 +1,9 @@
 
 import './App.css'
+import { Categories_sidebar } from './components/categoties-sidebar'
 import { Header } from './components/header'
 import { Topheader } from './components/topheader'
-import { Wrapper } from './components/wrapper'
+
 
 
 function App() {
@@ -10,17 +11,9 @@ function App() {
     <>
       <Topheader />
       <Header />
+      <Categories_sidebar />
 
-      <div className='pt-10 flex justify-between'>
-        <Wrapper>
-          <div>
-            Sidebar
-          </div> 
-          <div>
-            Slider
-          </div> 
-        </Wrapper>  
-      </div>   
+
     </>
   )
 }
